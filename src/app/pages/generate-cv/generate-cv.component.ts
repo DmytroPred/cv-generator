@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { jsPDF } from 'jspdf';
-import html2canvas from 'html2canvas';
 import { ICV } from '../../models/cv.interface';
 
 @Component({
@@ -190,27 +188,4 @@ export class GenerateCVComponent {
       ],
     },
   };
-
-  generatePDF(): void {
-    const elementToPrint = document.getElementById('cv-content');
-
-    if (!elementToPrint) {
-      return;
-    }
-
-    html2canvas(elementToPrint, { scale: 2 }).then((canvas) => {
-      const pdf = new jsPDF();
-      pdf.addImage(canvas.toDataURL('image/png'), 'PNG', 0, 0, 0, 0);
-
-      pdf.setProperties({
-        title: 'My Awesome PDF',
-        subject: 'PDF from html with Angular',
-        author: 'Dmytro',
-      });
-
-      // pdf.setFontSize(12);
-      // pdf.text('Some text', 14, 22);
-      pdf.save('Resume.pdf');
-    });
-  }
 }
