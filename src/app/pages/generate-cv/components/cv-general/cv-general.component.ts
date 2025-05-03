@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { IGeneralInfo } from '../../models/cv-sections.interfaces';
+import { IGeneralInfo } from '../../../../models/cv-sections.interfaces';
 
 @Component({
   selector: 'app-cv-general',

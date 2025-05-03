@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ISummary } from '../../models/cv-sections.interfaces';
+import { ISummary } from '../../../../models/cv-sections.interfaces';
 
 @Component({
   selector: 'app-cv-summary',

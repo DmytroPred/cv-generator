@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ILanguage } from '../../models/cv-sections.interfaces';
+import { ILanguage } from '../../../../models/cv-sections.interfaces';
 
 @Component({
   selector: 'app-cv-languages',

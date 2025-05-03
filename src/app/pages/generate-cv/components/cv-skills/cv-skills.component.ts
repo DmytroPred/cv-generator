@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ISkill } from '../../models/cv-sections.interfaces';
+import { ISkill } from '../../../../models/cv-sections.interfaces';
 
 @Component({
   selector: 'app-cv-skills',

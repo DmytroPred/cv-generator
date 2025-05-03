@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { GenerateCVComponent } from './components/generate-cv/generate-cv.component';
+import { GenerateCVComponent } from './pages/generate-cv/generate-cv.component';
 import { BrowserModule } from '@angular/platform-browser';
 
 const routes: Routes = [

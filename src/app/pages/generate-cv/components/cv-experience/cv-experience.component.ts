@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { IExperienceSection } from '../../models/cv-sections.interfaces';
+import { IExperienceSection } from '../../../../models/cv-sections.interfaces';
 
 @Component({
   selector: 'app-cv-experience',

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { IEducation } from '../../models/cv-sections.interfaces';
+import { IEducation } from '../../../../models/cv-sections.interfaces';
 
 @Component({
   selector: 'app-cv-education',
