@@ -1,0 +1,16 @@
+@if(skillSection) {
+<div class="cv__skills">
+  <h5>{{ skillSection.title }}</h5>
+  @for(section of skillSection.sections; track section.title) {
+  <div class="cv__skill">
+    <h6>
+      {{ section.title }}
+    </h6>
+    @for(skill of section.skills; track skill) {
+    <p>{{ skill }}</p>
+    }
+  </div>
+  }
+</div>
+
+}

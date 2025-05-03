@@ -1,0 +1,11 @@
+@if(languageSection) {
+<div class="cv__languages">
+  <h6>{{ languageSection.title }}</h6>
+
+  @for(language of languageSection.languages; track language.name) {
+  <p>
+    {{ language.name }} <span>- {{ language.level }}</span>
+  </p>
+  }
+</div>
+}

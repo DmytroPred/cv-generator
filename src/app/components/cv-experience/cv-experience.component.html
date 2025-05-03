@@ -1,0 +1,46 @@
+@if(experienceSection) {
+<div class="cv__experiences">
+  <h6>{{ experienceSection.title }}</h6>
+
+  @for(experience of experienceSection.experience; track experience.company) {
+  <div class="cv__experience">
+    <div>
+      <p>
+        {{ experience.position }}
+      </p>
+
+      <p>
+        {{ experience.company }} <span>/ {{ experience.length }} </span>
+      </p>
+    </div>
+
+    <div>
+      <p>{{ experience.summary }}</p>
+
+      <ul>
+        <li *ngFor="let technology of experience.technologies">
+          {{ technology }}
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <p>{{ experience.respTitle }}</p>
+
+      <ul>
+        <li *ngFor="let responsibility of experience.responsibilities">
+          {{ responsibility }}
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- { "position": "React Developer", 
+  "company": "ZasJobs (Spain)", 
+  "time": "6 months", 
+  "summary": "\n Zasjobs is a vacancy platform which use AI for fetching data from uploaded cv and matching.\n Whenever candidate assign to offer, company get brief compatability data that generated via AI which compare cv and offer requirements.\n Company could also request deep matching which use advanced AI model.", "technologies": [ "React", "Redux", "Formik", "Axios", "Typescript" ], 
+  "respTitle": "My responsibilities were:", 
+  "responsibilities": [ "Integration AI requests", "Live chat implementation", "Develop UI for desktop/mobile", "Sign-up flow implemetation" ] } -->
+  }
+</div>
+}

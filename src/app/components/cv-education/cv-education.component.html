@@ -1,0 +1,9 @@
+@if(educationSection) {
+<div class="cv__education">
+  <h6>{{ educationSection.title }}</h6>
+
+  @for(education of educationSection.educations; track education.name) {
+  {{ education.name }} - {{ education.years }}
+  }
+</div>
+}

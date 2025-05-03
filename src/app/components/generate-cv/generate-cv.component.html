@@ -1,0 +1,12 @@
+<button type="button" (click)="generatePDF()">Generate CV</button>
+
+<div id="cv-content" class="cv">
+  <app-cv-general [generalInfo]="cv.general"></app-cv-general>
+  <app-cv-summary [summary]="cv.summary"></app-cv-summary>
+  <app-cv-skills [skillSection]="cv.skillSection"></app-cv-skills>
+  <app-cv-education [educationSection]="cv.educationSection"></app-cv-education>
+  <app-cv-languages [languageSection]="cv.languageSection"></app-cv-languages>
+  <app-cv-experience
+    [experienceSection]="cv.experienceSection"
+  ></app-cv-experience>
+</div>
