@@ -1,11 +1,14 @@
 @if(languageSection) {
-<div class="cv__languages">
-  <h6>{{ languageSection.title }}</h6>
+<div class="cv__languages mt-2">
+  <h5 class="font-14 fw-bold heading-underline">{{ languageSection.title }}</h5>
 
-  @for(language of languageSection.languages; track language.name) {
-  <p>
-    {{ language.name }} <span>- {{ language.level }}</span>
-  </p>
-  }
+  <ul class="ps-0">
+    @for(language of languageSection.languages; track language.name) {
+    <li class="font-12 list-unstyled">
+      <b>{{ language.name }}</b
+      ><span> - {{ language.level }}</span>
+    </li>
+    }
+  </ul>
 </div>
 }

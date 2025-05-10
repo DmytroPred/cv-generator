@@ -1,16 +1,20 @@
 @if(skillSection) {
-<div class="cv__skills">
-  <h5>{{ skillSection.title }}</h5>
-  @for(section of skillSection.sections; track section.title) {
-  <div class="cv__skill">
-    <h6>
-      {{ section.title }}
-    </h6>
-    @for(skill of section.skills; track skill) {
-    <p>{{ skill }}</p>
+<div class="skills mt-2">
+  <h5 class="font-14 fw-bold heading-underline">{{ skillSection.title }}</h5>
+  <div class="skills__wrapper">
+    @for(section of skillSection.sections; track section.title) {
+    <div class="skills__item">
+      <h6 class="font-12 fw-bold skills__header">
+        {{ section.title }}
+      </h6>
+
+      <ul class="ps-0 mb-3">
+        @for(skill of section.skills; track skill) {
+        <li class="font-12 list-unstyled">{{ skill }}</li>
+        }
+      </ul>
+    </div>
     }
   </div>
-  }
 </div>
-
 }

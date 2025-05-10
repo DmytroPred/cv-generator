@@ -18,11 +18,10 @@ export class GenerateCVComponent {
     summary: {
       title: 'Professional summary',
       description: `
-        Motivated programmer with 3 years front-end development experience.
-        I have deep knowledge in HTML, CSS, SCSS, JavaScript and Typescript. 
-        I have commercial experience working with Angular and React. 
+        Result-driven Frontend Developer with 3 years of hands-on experience implementing dynamic, user-friendly web applications.
+        Proficient in modern JavaScript frameworks including Angular and React, with a foundation in jQuery for legacy support.
         Developed dozens of pages with complicated functionalities. 
-        Worked with RxJS/Signals and Redux to manage application state.
+        Commited to delivering scalable and maintainable code that enhances user experience and meets business goals.
       `,
     },
 
@@ -41,14 +40,7 @@ export class GenerateCVComponent {
         },
         {
           title: 'Frameworks/Libraries',
-          skills: [
-            'Angular',
-            'Angular Material',
-            'RxJS',
-            'React',
-            'Redux',
-            'Axios',
-          ],
+          skills: ['Angular', 'Angular Material', 'React', 'Redux', 'JQuery'],
         },
         {
           title: 'Technologies/Databases',
@@ -56,7 +48,7 @@ export class GenerateCVComponent {
         },
         {
           title: 'Others',
-          skills: ['Git', 'GitHub', 'Figma'],
+          skills: ['Git', 'GitHub', 'Figma', 'Jira'],
         },
       ],
     },
@@ -65,12 +57,12 @@ export class GenerateCVComponent {
       title: 'Education',
       educations: [
         {
-          name: "Kitsman College of Podolskiy State Agricultural and Technical University, Bachelor's degree, Land Management",
-          years: '2014 - 2016',
-        },
-        {
           name: "National University Lviv Polytechnic, Master's degree Automation and computer- integrated technologies",
           years: '2018 - 2020',
+        },
+        {
+          name: "Kitsman College of Podolskiy State Agricultural and Technical University, Bachelor's degree, Land Management",
+          years: '2014 - 2016',
         },
       ],
     },

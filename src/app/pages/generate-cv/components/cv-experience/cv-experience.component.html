@@ -1,46 +1,43 @@
 @if(experienceSection) {
-<div class="cv__experiences">
-  <h6>{{ experienceSection.title }}</h6>
+<div class="mt-2">
+  <h5 class="font-14 fw-bold heading-underline">
+    {{ experienceSection.title }}
+  </h5>
 
-  @for(experience of experienceSection.experience; track experience.company) {
-  <div class="cv__experience">
-    <div>
-      <p>
-        {{ experience.position }}
-      </p>
+  <div class="mt-4">
+    @for(experience of experienceSection.experience; track experience.company) {
+    <div class="experience">
+      <div>
+        <h6 class="experience__header font-12 fw-bold">
+          {{ experience.position }}
+        </h6>
 
-      <p>
-        {{ experience.company }} <span>/ {{ experience.length }} </span>
-      </p>
+        <p class="mb-0 font-12 fw-bold">
+          {{ experience.company }} <span>/ {{ experience.length }} </span>
+        </p>
+      </div>
+
+      <div class="font-12">
+        <p class="mb-0">{{ experience.summary }}</p>
+
+        <ul class="mb-0">
+          <li *ngFor="let technology of experience.technologies">
+            {{ technology }}
+          </li>
+        </ul>
+      </div>
+
+      <div class="font-12">
+        <p class="mb-0">{{ experience.respTitle }}</p>
+
+        <ul class="mb-0">
+          <li *ngFor="let responsibility of experience.responsibilities">
+            {{ responsibility }}
+          </li>
+        </ul>
+      </div>
     </div>
-
-    <div>
-      <p>{{ experience.summary }}</p>
-
-      <ul>
-        <li *ngFor="let technology of experience.technologies">
-          {{ technology }}
-        </li>
-      </ul>
-    </div>
-
-    <div>
-      <p>{{ experience.respTitle }}</p>
-
-      <ul>
-        <li *ngFor="let responsibility of experience.responsibilities">
-          {{ responsibility }}
-        </li>
-      </ul>
-    </div>
+    }
   </div>
-
-  <!-- { "position": "React Developer", 
-  "company": "ZasJobs (Spain)", 
-  "time": "6 months", 
-  "summary": "\n Zasjobs is a vacancy platform which use AI for fetching data from uploaded cv and matching.\n Whenever candidate assign to offer, company get brief compatability data that generated via AI which compare cv and offer requirements.\n Company could also request deep matching which use advanced AI model.", "technologies": [ "React", "Redux", "Formik", "Axios", "Typescript" ], 
-  "respTitle": "My responsibilities were:", 
-  "responsibilities": [ "Integration AI requests", "Live chat implementation", "Develop UI for desktop/mobile", "Sign-up flow implemetation" ] } -->
-  }
 </div>
 }

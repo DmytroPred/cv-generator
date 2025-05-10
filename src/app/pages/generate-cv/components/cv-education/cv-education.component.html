@@ -1,9 +1,15 @@
 @if(educationSection) {
-<div class="cv__education">
-  <h6>{{ educationSection.title }}</h6>
+<div class="cv__education mt-2">
+  <h5 class="font-14 fw-bold heading-underline">
+    {{ educationSection.title }}
+  </h5>
 
-  @for(education of educationSection.educations; track education.name) {
-  {{ education.name }} - {{ education.years }}
-  }
+  <ul class="ps-0">
+    @for(education of educationSection.educations; track education.name) {
+    <li class="font-12 list-unstyled">
+      {{ education.name }} - {{ education.years }}
+    </li>
+    }
+  </ul>
 </div>
 }
