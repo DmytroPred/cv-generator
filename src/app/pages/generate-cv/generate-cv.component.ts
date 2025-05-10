@@ -13,6 +13,7 @@ export class GenerateCVComponent {
       position: 'Frontend Developer',
       email: 'predchishindmytro@gmail.com',
       birthDate: '07/11/1995',
+      linkedin: 'www.linkedin.com/in/dmytro-predchyshyn-a13a9322b',
     },
 
     summary: {
@@ -89,18 +90,14 @@ export class GenerateCVComponent {
           company: 'Qpercom (Ireland)',
           length: '11 months',
           summary: `
-          Qpercom is a digital scoring and virtual assessment system that makes examinations, interviews and recruitment easier, faster and more reliable.
-          I successfully designed and implemented student portfolio flow with reliable media center. 
-          Reinvent several crucial pages with new technologies and enchance UI/UX. 
-          Implemented UI and Prompt for AI functionality.`,
-          technologies: ['Angular', 'JQuery', 'PHP', 'React', 'Node.js', 'Vue'],
-          respTitle: 'My responsibilities:',
-          responsibilities: [
-            'Remake legacy pages with new technologies',
-            'Design UI/UX',
-            'Integrate AI requests',
-            'Prompt engineering',
-            'Bug fixing',
+            Qpercom - Digital Assessment Platform.
+            Technologies: Angular, React, Vue, Node.js, PHP, jQuery`,
+          technologies: [
+            'Led the design and implementation of the student portfolio workflow, including integration with a robust media center for reliable content handling.',
+            'Modernized critical legacy pages using modern frontend frameworks, significantly improving performance and user engagement.',
+            'Enhanced UI/UX across multiple modules with a focus on accessibility, responsiveness, and consistency.',
+            'Integrated AI functionality, including UI components and prompt engineering for intelligent user interactions.',
+            'Collaborated cross-functionally to troubleshoot and resolve complex bugs, ensuring system stability and a smooth user experience.',
           ],
         },
         {
@@ -108,16 +105,13 @@ export class GenerateCVComponent {
           company: 'ZasJobs (Spain)',
           length: '6 months',
           summary: `
-          Zasjobs is a vacancy platform which use AI for fetching data from uploaded cv and matching.
-          Whenever candidate assign to offer, company get brief compatability data that generated via AI which compare cv and offer requirements.
-          Company could also request deep matching which use advanced AI model.`,
-          technologies: ['React', 'Redux', 'Formik', 'Axios', 'Typescript'],
-          respTitle: 'My responsibilities were:',
-          responsibilities: [
-            'Integration AI requests',
-            'Live chat implementation',
-            'Develop UI for desktop/mobile',
-            'Sign-up flow implemetation',
+          Zasjobs - AI-Powered Recruitment Platform. Technologies: React, Redux, TypeScript, Formik, Axios`,
+          technologies: [
+            'Developed responsive, user-friendly interfaces for both desktop and mobile platforms, ensuring seamless candidate and recruiter experiences.',
+            'Implemented the full sign-up and onboarding flow, enhancing user engagement and streamlining access to platform features.',
+            'Integrated AI-driven features that matched candidate CVs with job offers, including real-time compatibility scoring and advanced deep matching requests.',
+            'Built and integrated a live chat system to improve real-time communication between candidates and employers.',
+            'Collaborated closely with backend teams to design robust API interactions and maintain efficient state management using Redux.',
           ],
         },
         {
@@ -125,19 +119,15 @@ export class GenerateCVComponent {
           company: 'Medatus (Germany)',
           length: '8 months',
           summary: `
-            Medatus is a German search engine that helps finding healthcare information using
-            quiz. Project designed to help users find best specialists via rating that forms after
-            questioning. Companies or specialists could use platform for advertising their services to
-            potential customers.`,
-          technologies: ['Angular', 'RxJS'],
-          respTitle:
-            'I was writing the project from scratch, so my responsibilities were:',
-          responsibilities: [
-            'Design and architecture',
-            'Pages development',
-            'Animations integration',
-            'Bug fixing',
-            'SEO optimization',
+            Medatus - Healthcare Search Engine (Germany).
+            Technologies: Angular, RxJS`,
+          technologies: [
+            'Led frontend development from the ground up, designing the architecture and establishing the project’s foundational structure.',
+            'Built dynamic, interactive pages using Angular, with a focus on smooth animations and responsive user interfaces.',
+            'Integrated quiz-based flows to guide users toward top-rated healthcare specialists based on personalized input.',
+            'Implemented SEO optimization strategies to improve platform visibility and search engine ranking.',
+            'Collaborated with product and design teams to refine features and ensure a seamless user experience across devices.',
+            'Proactively identified and resolved bugs throughout the development cycle to maintain high code quality and platform stability.',
           ],
         },
 
@@ -146,17 +136,15 @@ export class GenerateCVComponent {
           company: 'Task Management App (Ukraine)',
           length: '10 months',
           summary: `
-            I was working under internal task management platform for software development
-            agency. Project was very similar to Trello app. It allows creating dynamic dashboard and
-            tasks. Project was using a lot of drag & drop components (like statuses, tasks etc.)`,
-          technologies: ['RxJS', 'Firebase', 'HTML', 'Angular', 'Scss'],
-          respTitle:
-            'I was the only one developer on the project, so I was working under design and architecture.',
-          responsibilities: [
-            'Feature development',
-            'Design and architecture',
-            'Bug fixing',
-            'Writing unit tests',
+            Internal Task Management Platform - Trello-like App for a Software Agency. Technologies: Angular, RxJS, Firebase, SCSS, HTML`,
+          technologies: [
+            'Led end-to-end frontend development of a dynamic task and dashboard management platform, closely modeled after Trello.',
+            'Designed and architected the application from scratch, implementing scalable component structures and efficient state management using RxJS.',
+            'Developed intuitive drag-and-drop functionality for tasks, statuses, and boards, enhancing user interaction and workflow customization.',
+            'Integrated Firebase for real-time updates and data synchronization across the platform.',
+            'Built responsive, mobile-friendly UIs with SCSS, ensuring a consistent experience across devices.',
+            'Wrote comprehensive unit tests to ensure code quality and maintainability.',
+            'Independently managed feature development, bug fixing, and performance optimization.',
           ],
         },
 
@@ -165,16 +153,13 @@ export class GenerateCVComponent {
           company: 'WIKI project (Ukraine)',
           length: '6 months',
           summary: `
-            Project task was to develop a web application that can be used in the company as a wiki page for the company.`,
-          technologies: ['Angular', 'Firebase', 'SCSS', 'Rest'],
-          respTitle:
-            'I was writing the project from scratch, so my responsibilities were:',
-          responsibilities: [
-            'Design and architecture',
-            'Pages development',
-            'Animations integration',
-            'Bug fixing',
-            'SEO optimization',
+            Internal Company Wiki - Knowledge Management Platform. Technologies: Angular, Firebase, REST APIs, SCSS`,
+          technologies: [
+            'Designed and developed a fully responsive internal wiki application from the ground up to centralize company knowledge and documentation.',
+            'Created the application architecture, component structure, and service layers using Angular and Firebase for real-time content management.',
+            'Developed multiple pages with intuitive navigation and smooth animations to enhance user experience and engagement.',
+            'Implemented SEO best practices to ensure optimized content indexing for internal search engines and improved discoverability.',
+            'Resolved UI bugs and performance issues to ensure a stable, consistent experience across browsers and devices.',
           ],
         },
       ],

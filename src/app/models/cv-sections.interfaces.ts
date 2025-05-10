@@ -3,6 +3,7 @@ export interface IGeneralInfo {
   position: string;
   email: string;
   birthDate: string;
+  linkedin: string;
 }
 
 export interface ISummary extends ITitle {
@@ -40,8 +41,8 @@ export interface IExperience {
   length: string;
   summary: string;
   technologies: string[];
-  respTitle: string;
-  responsibilities: string[];
+  respTitle?: string;
+  responsibilities?: string[];
 }
 
 export interface ITitle {
